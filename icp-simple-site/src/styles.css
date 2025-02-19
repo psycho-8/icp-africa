@@ -1,0 +1,186 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for general layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+#projects {
+    background-color: white;
+    padding: 60px 0;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about h2, #skills h2, #projects h2, #contact h2 {
+        font-size: 2rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    #about p, #skills ul li, #projects p, #contact p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
